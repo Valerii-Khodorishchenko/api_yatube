@@ -8,7 +8,6 @@ from .views import CommentViewSet, GroupViewSet, PostViewSet
 router = DefaultRouter()
 router.register('posts', PostViewSet, basename='post')
 router.register('groups', GroupViewSet, basename='group')
-# router.register(r'posts/(?P<post_id>\d+)/comments/($|((?P<comment_id>\d+)/))', CommentViewSet, basename='comment')
 
 comment_list = CommentViewSet.as_view(
     {
